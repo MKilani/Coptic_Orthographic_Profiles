@@ -19,6 +19,8 @@ Each orthographic profile is provided as a self-standing python file containing 
 
 The file tester.py provides an imlementation of the available phonetic profiles
 
+## Profiles
+
 ### Sahidic profile
 
 Version 1.0
