@@ -1,6 +1,6 @@
 # Coptic Orthographic Profiles
 
-This repository is meant to collect python methods that can be used to automatically generate phonetic transcriptions of Coptic words.
+This collects python methods to automatically generate phonetic transcriptions of Coptic words.
 
 ## Getting Started
 
