@@ -48,7 +48,9 @@ Kilani Marwan, 2019, Coptic Orthographic Profiles - Sahidic profile, https://git
 | ⲉⲩ = ew | ⲓ / ⲉⲓ = j / ī | ⲟⲩ = w / ū |
 
 ⲓⲉⲓ / ⲓⲓ = ij
+
 double vowel = vowel + ʔ
+
 0 stressed vowel in words spelled only with consonant = e ( e.g. ⲧⲃⲧ = tebt )
 
 #### Format of the output
