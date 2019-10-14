@@ -43,10 +43,11 @@ Kilani Marwan, 2019, Coptic Orthographic Profiles - Sahidic profile, https://git
 
 |   |   |   |
 |---|---|---|
-| ⲉ = ə / e | ⲟ = o | ⲁⲩ = aw |
-| ⲏ = ē | ⲱ = ō | ⲉⲩ = ew |
-| ⲓ / ⲉⲓ = j / ī | ⲟⲩ = w / ū | ⲓⲉⲓ / ⲓⲓ = ij |
+| ⲁ = ă / a | ⲉ = ə / e | ⲟ = o |
+| ⲁⲩ = aw | ⲏ = ē | ⲱ = ō |
+| ⲉⲩ = ew | ⲓ / ⲉⲓ = j / ī | ⲟⲩ = w / ū |
 
+ⲓⲉⲓ / ⲓⲓ = ij
 double vowel = vowel + ʔ
 0 stressed vowel in words spelled only with consonant = e ( e.g. ⲧⲃⲧ = tebt )
 
