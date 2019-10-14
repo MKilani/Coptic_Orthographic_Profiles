@@ -7,6 +7,7 @@ This repository is meant to collect python methods that can be used to automatic
 ### Prerequisites
 
 You need Python, of course ;-)
+
 And you need unicode-based transcriptions of Coptic words to parse...
 
 
@@ -22,6 +23,10 @@ The file tester.py provides an imlementation of the available phonetic profiles
 
 Version 1.0
 Date of publication: 14.10.2019
+
+#### How to cite
+
+Kilani Marwan, 2019, Coptic Orthographic Profiles - Sahidic profile, https://github.com/MKilani/Coptic_Orthographic_Profiles
 
 #### Phonetic equivalences:
 
