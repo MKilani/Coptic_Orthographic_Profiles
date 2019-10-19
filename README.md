@@ -70,6 +70,7 @@ The output is a dictionary with the following entries:
 	* C = consonant
 	* V = vowel
 	* W = ambigous cases (j|ī and w|ū)
+	* v = ambigous cases in which the presence of the vowel is not certain
 * Stress : analysis of the stress position - string
 	* 0 = consonant (no stress)
 	* S = stressed vowel
