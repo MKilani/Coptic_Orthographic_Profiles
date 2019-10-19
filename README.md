@@ -13,7 +13,7 @@ And you need unicode-based transcriptions of Coptic words to parse...
 
 ### Installing
 
-Each orthographic profile is provided as a self-standing python file containing a standrd python method. Just add it to your project and import the method as usual.
+Each orthographic profile is provided as a standalone python file containing a standrd python method. Just add it to your project and import the method as usual.
 
 ## Running the tests
 
