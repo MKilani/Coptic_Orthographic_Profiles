@@ -17,7 +17,7 @@ def parseCopticSahidic(lexicalItem, verbose=False):
 
     translitLexicalItem = translitLexicalItem.replace("ⲟⲩ", "ⲞⲨ")
     translitLexicalItem = translitLexicalItem.replace("ⲉⲓ", "ⲓ")
-    translitLexicalItem = translitLexicalItem.replace("ϯ", "ⲧⲓ")
+    #translitLexicalItem = translitLexicalItem.replace("ϯ", "ⲧⲓ")
     translitLexicalItem = translitLexicalItem.replace("ⲁⲓ", "a.j.")
 
     translitLexicalItem = translitLexicalItem.replace("ⲁⲁ", "a.ʔ.")
@@ -27,6 +27,7 @@ def parseCopticSahidic(lexicalItem, verbose=False):
     translitLexicalItem = translitLexicalItem.replace("ⲟⲟ", "o.ʔ.")
     translitLexicalItem = translitLexicalItem.replace("ⲩⲩ", "u.ʔ.")
     translitLexicalItem = translitLexicalItem.replace("ⲱⲱ", "ō.ʔ.")
+    translitLexicalItem = translitLexicalItem.replace("ʔ.ⲩ", "ʔ.w.")
 
     vowels = 0
     letters = list(translitLexicalItem)
@@ -63,7 +64,8 @@ def parseCopticSahidic(lexicalItem, verbose=False):
         translitLexicalItem = translitLexicalItem.replace("ⲱ", "ō.")
         translitLexicalItem = translitLexicalItem.replace("ⲟ", "o.")
         translitLexicalItem = translitLexicalItem.replace("ⲏ", "ē.")
-        translitLexicalItem = translitLexicalItem.replace("ϯ", "t.i.")
+        translitLexicalItem = translitLexicalItem.replace("ϯ$", "t.ɨ.")
+        translitLexicalItem = translitLexicalItem.replace("ϯ", "t.ī.")
 
     elif ("ⲁⲩ" in translitLexicalItem):
         translitLexicalItem = translitLexicalItem.replace("ⲁⲩ", "a.w.")
@@ -124,6 +126,7 @@ def parseCopticSahidic(lexicalItem, verbose=False):
         .replace("ϥ", "f.") \
         .replace("ϧ", "x.") \
         .replace("ϩ", "h.") \
+        .replace("ⳉ", "χ.") \
         .replace("ϫ", "c.") \
         .replace("ϭ", "kʲ.") \
         .replace("#", "#.")
@@ -144,12 +147,6 @@ def parseCopticSahidic(lexicalItem, verbose=False):
         else:
             consonatCounter = consonatCounter + 1
 
-    ###Sahidic
-    if vowelCounter == 1 and phonemes[len(phonemes) - 2] == "e":
-        phonemes.insert(2, "e")
-        copticLetters.insert(2, "-")
-        vowelCounter = vowelCounter + 1
-        phonemes[len(phonemes) - 2] = "ə"
 
     for i in range(0, len(phonemes)):
         if i == 1 and phonemes[i] == "w|ū":
@@ -170,12 +167,33 @@ def parseCopticSahidic(lexicalItem, verbose=False):
                 if "ə|e" in phonemes[n]:
                     phonemes[n] = "ə"
 
+        if phonemes[i] == "ī":
+            for n in range(0, len(phonemes)):
+                if "ə|e" in phonemes[n]:
+                    phonemes[n] = "ə"
+
+        if phonemes[i] == "w|ū" and isConsonant(phonemes[i + 1]) == "cons" \
+                and isConsonant(phonemes[i - 1]) == "cons":
+            phonemes[i] = "ū"
+            for n in range(0, len(phonemes)):
+                if "ə|e" in phonemes[n]:
+                    phonemes[n] = "ə"
+
         if "ə|e" in phonemes[i] and vowelCounter == 1:
             phonemes[i] = "e"
         if "ă|a" in phonemes[i] and vowelCounter == 1:
             phonemes[i] = "a"
         if "j|ī" in phonemes[i] and vowelCounter == 1:
             phonemes[i] = "ī"
+        if "w|ū" in phonemes[i] and vowelCounter == 1:
+            phonemes[i] = "ū"
+
+    ###Sahidic
+    if vowelCounter == 1 and phonemes[len(phonemes) - 2] == "e" and len(phonemes) > 4:
+        phonemes.insert(2, "e")
+        copticLetters.insert(2, "-")
+        vowelCounter = vowelCounter + 1
+        phonemes[len(phonemes) - 2] = "ə"
 
     glottalStop = False
     for i in range(0, len(phonemes)):
