@@ -91,7 +91,7 @@ Date of publication: 06.01.2020
 
 For details, see:
 
-[Sahidic Profile - Read me](parsers/PanDialect)
+[PanDialect Profile - Read me](parsers/PanDialect)
 
 #### Description
 
