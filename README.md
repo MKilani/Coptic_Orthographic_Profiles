@@ -86,8 +86,11 @@ where "word_to_parse" is the unicode Coptic word to parse.
 ### Sahidic profile
 
 Version 1.0
+
 Date of publication: 14.10.2019
+
 For details, see:
+
 [Sahidic Profile - Read me](parsers/Sahidic/README.md)
 
 #### How to cite
