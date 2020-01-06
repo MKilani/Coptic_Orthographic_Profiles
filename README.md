@@ -91,7 +91,7 @@ Date of publication: 14.10.2019
 
 For details, see:
 
-[Sahidic Profile - Read me](parsers/Sahidic/README.md)
+[Sahidic Profile - Read me](parsers/Sahidic)
 
 #### How to cite
 

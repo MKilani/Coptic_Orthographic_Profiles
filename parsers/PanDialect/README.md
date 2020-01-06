@@ -1,4 +1,4 @@
-# Coptic Orthographic Profiles - Sahidic
+# Coptic Orthographic Profiles - PanDialect
 
 ## Technical details
 
@@ -8,7 +8,7 @@ Date of publication: 06.01.2020
 
 ### How to cite
 
-Kilani Marwan, 2019, Coptic Orthographic Profiles - Sahidic profile, https://github.com/MKilani/Coptic_Orthographic_Profiles
+Kilani Marwan, 2019, Coptic Orthographic Profiles - PanDialect profile, https://github.com/MKilani/Coptic_Orthographic_Profiles
 
 ## Phonetic equivalences:
 
@@ -33,7 +33,7 @@ Kilani Marwan, 2019, Coptic Orthographic Profiles - Sahidic profile, https://git
 
 double vowel = vowel + ʔ
 
-final unstressed ⲓ = j
+final unstressed ⲓ = j|ɨ
 
 0 stressed vowel in words spelled only with consonant = e ( e.g. ⲧⲃⲧ = tebt )
 
