@@ -24,7 +24,7 @@ The file tester.py provides an implementation of the available phonetic profiles
 It can be run from command line with:
 
 ```shell
-python tester.py
+python3 tester.py
 ```
 
 The results should look like this:
